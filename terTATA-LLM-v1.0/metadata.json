@@ -1,0 +1,27 @@
+{
+  "model_name": "tat-llm-final-e4",
+  "base_model": "NousResearch/Nous-Hermes-2-Mistral-7B-DPO",
+  "tokenizer": "NousResearch/Nous-Hermes-2-Mistral-7B-DPO",
+  "adapter_type": "LoRA",
+  "adapter_config": {
+    "r": 64,
+    "alpha": 16,
+    "dropout": 0.1,
+    "bias": "none"
+  },
+  "training": {
+    "dataset": "TAT-QA (train.json)",
+    "num_examples": 9000,
+    "num_epochs": 4,
+    "max_seq_length": 1024,
+    "batch_size_per_device": 2,
+    "learning_rate": 0.0002,
+    "lr_scheduler": "constant",
+    "fp16": false,
+    "bf16": true,
+    "optimizer": "AdamW (via Trainer)"
+  },
+  "notes": "Instruction-tuned with simplified prompt format. No evaluation run due to memory constraints. Use .generate() for inference.",
+  "created_by": "Your Name or Team",
+  "date": "2025-07-08"
+}
