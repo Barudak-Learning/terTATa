@@ -15,3 +15,6 @@ terTATa-LLM adalah sistem AI berbasis LLM (Large Language Model) yang dirancang 
 - Fine-tuning: PEFT LoRA + 4-bit quantization
 - Dataset: [`TAT-QA`](https://huggingface.co/datasets/next-tat/TAT-QA)
 - Prompting: 6-step pipeline (Instruction → Table → Text → Question)
+
+## Update 
+- Submisi terTATa-LLM: Top 10 Datathon RISTEK Fasilkom UI 2025
